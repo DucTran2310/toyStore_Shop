@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="grid">
+                <!-- do header kich thuoc lon hon grid nen phan trong grid duoc can giua -->
+
+                <nav class="header__navbar">
+                    <!-- Block Element Modifier -->
+                    <ul class="header__navbar--list">
+                        <li class="header__navbar-item header__navbar-item--qr header__navbar-item--separate">
+                            Vào cửa hàng trên ứng dụng Ad-Star
+                            <div class="header__qr">
+                                <img src="./assets/img/qr_code.png" alt="QR_Code" class="header__qr-img">
+                                <div class="header__qr-apps">
+                                    <a href="" class="header__qr-link">
+                                        <img src="./assets/img/gg_play.png" alt="GG_play" class="header__qr-download">
+                                    </a>
+                                    <a href="" class="header__qr-link">
+                                        <img src="./assets/img/gg_appstore.png" alt="App_store" class="header__qr-download">
+                                    </a>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-tittle-no-pointer">Kết nối</span>
+                            <a href="" class="header__navbar-icon--link">
+                                <i class="header__navbar-icon fab fa-facebook"></i>
+                            </a>
+                            <a href="" class="header__navbar-icon--link">
+                                <i class="header__navbar-icon fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="header__navbar--list">
+                        <li class="header__navbar-item header__navbar-item--has-notify">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon far fa-bell"></i> Thông báo
+                            </a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <span>
+                                                <img src="./assets/img/anh_mau.png" alt="" class="header__notify-img">
+                                            </span>
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">
+                                                    Xác thực nguồn gốc mỹ phẩm Ohui chính hãng
+                                                </span>
+                                                <span class="header__notify-description">
+                                                    Mô tả mỹ phẩm Ohui
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <span>
+                                                <img src="./assets/img/anh_mau.png" alt="" class="header__notify-img">
+                                            </span>
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">
+                                                    Xác thực nguồn gốc mỹ phẩm Ohui chính hãng
+                                                </span>
+                                                <span class="header__notify-description">
+                                                    Mô tả mỹ phẩm Ohui
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <span>
+                                                <img src="./assets/img/anh_mau.png" alt="" class="header__notify-img">
+                                            </span>
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">
+                                                    Xác thực nguồn gốc mỹ phẩm Ohui chính hãng
+                                                </span>
+                                                <span class="header__notify-description">
+                                                    Mô tả mỹ phẩm Ohui
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="" class="header__notify-footer-btn">Xem tất cả</a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon far fa-question-circle"></i> Trợ giúp</a>
+                        </li>
+                        <li id="register-item" class="header__navbar-item header__navbar-item--bold header__navbar-item--separate">Đăng ký</li>
+                        <li id="login-item" class="header__navbar-item header__navbar-item--bold">Đăng nhập</li>
+                    </ul>
+
+                </nav>
+
+                <!-- Header with search -->
+                <div class="header-with-search">
+                    <div class="header__logo">
+                        <a href="" class="header__logo-link">
+                            <img src="./assets/img/logo.png" class="header__logo-img" alt="">
+                        </a>
+                    </div>
+
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input type="text " class="header__search-input" placeholder="Nhập để tìm kiếm">
+
+                            <!-- Search history -->
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="">Áo thun Iron man</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Móc khóa</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header__search-select">
+                            <span class="header__search-select-label">Trong Shop</span>
+                            <i class="header__search-select-icon fa fa-angle-down"></i>
+
+                            <ul class="header__search-option">
+                                <li class="header__search-option-item header__search-option--active">
+                                    <span>Trong Shop</span>
+                                    <i class="fa fa-check"></i>
+                                </li>
+                                <li class="header__search-option-item">
+                                    <span>Ngoài Shop</span>
+                                    <i class="fa fa-check"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fa fa-search" aria-hidden="true"></i>
+
+                        </button>
+                    </div>
+
+                    <!-- Cart layout -->
+                    <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fas fa-shopping-cart"></i>
+                            <span class="header__cart-notice">1</span>
+
+                            <!-- header__cart-list--no-cart -->
+                            <div class="header__cart-list ">
+                                <img src="./assets/img/no-cart.png" class="header__cart-no-cart-img" alt="">
+                                <span class="header__cart-no-cart-msg">
+                                    Chưa có sản phẩm
+                                </span>
+
+                                <h3 class="header__cart-heading">Sản phẩm đã thêm</h3>
+                                <ul class="header__cart-list-item">
+                                    <!-- Cart items -->
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img/moc_khoa.jfif" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Móc khóa cặp xinh đẹp</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">200.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">Phân loại: Hàng kỉ niệm</span>
+                                                <span class="header__cart-item-remove">Xoá</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <button class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </header>
+    <div class="container">
+
+    </div>
+    <footer class="footer">
+
+    </footer>
+    <!--Modal layout-->
+    <div class="modal">
+        <div class="modal__overlay"></div>
+
+        <div class="modal__body">
+            <!-- Register Form -->
+            <form id="register-form" class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <div class="auth-form__heading">Đăng ký</div>
+                    </div>
+
+                    <div class="auth-form__groups">
+                        <div class="auth-form__group">
+                            <input id="email" rule="email" type="text" class="auth-form__input" placeholder="Email của bạn" />
+                        </div>
+                        <div class="auth-form__group">
+                            <input id="password" rule="password" type="password" class="auth-form__input" placeholder="Mật khẩu của bạn" />
+                        </div>
+                        <div class="auth-form__group">
+                            <input id="password_confirmation" rule="password_confirmation" type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu của bạn" /><span class="auth-form__message"></span>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy-text">
+                            Bằng việc đăng ký, bạn đã đồng ý với Minecraft Shop
+                            <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                            <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+                        </p>
+
+                        <div class="auth-form__switch-wrapper">
+                            <span class="auth-form__switch-text">Bạn đã có tài khoản?</span>
+                            <span class="auth-form__switch-btn">Đăng nhập</span>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="btn auth-form__controls-back">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG KÝ</button>
+                    </div>
+                </div>
+
+
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                        <span class="auth-form__socials-title">
+							Kết nối với Facebook
+						</span>
+                    </a>
+                    <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-google"></i>
+                        <span class="auth-form__socials-title">
+							Kết nối với Google
+						</span>
+                    </a>
+                </div>
+            </form>
+
+            <!-- Login Form -->
+            <form id="login-form" class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <div class="auth-form__heading">Đăng nhập</div>
+                    </div>
+
+                    <div class="auth-form__groups">
+                        <div class="auth-form__group">
+                            <input id="email" rule="email" type="text" class="auth-form__input" placeholder="Email của bạn" />
+                        </div>
+                        <div class="auth-form__group">
+                            <input id="password" rule="password" type="password" class="auth-form__input" placeholder="Mật khẩu của bạn" />
+                        </div>
+                    </div>
+
+                    <div class="auth-form__aside">
+                        <div class="auth-form__help">
+                            <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                            <span class="auth-form__help-separate"></span>
+                            <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="btn auth-form__controls-back">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                    </div>
+
+                    <div class="auth-form__switch-wrapper">
+                        <span class="auth-form__switch-text">Bạn chưa có tài khoản?</span>
+                        <span class="auth-form__switch-btn">Đăng ký</span>
+                    </div>
+                </div>
+
+
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                        <span class="auth-form__socials-title">
+							Kết nối với Facebook
+						</span>
+                    </a>
+                    <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-google"></i>
+                        <span class="auth-form__socials-title">
+							Kết nối với Google
+						</span>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="./Javascript/handle-form.js"></script>
+<script src="./Javascript/validator.js"></script>
+<script>
+    Validator('#register-form', '.auth-form__group', 3);
+    Validator('#login-form', '.auth-form__group', 3);
+</script>
+
+</html>
