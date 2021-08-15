@@ -196,6 +196,7 @@ html {
 
 .select-input:hover .select-input__list {
     display: block;
+    z-index: 1;
 }
 
 .select-input__item {
@@ -212,4 +213,41 @@ html {
 
 .select-input__link:hover {
     color: var(--primary-color);
+}
+
+
+/* Pagination */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    list-style: none;
+}
+
+.pagination-item {
+    margin: 0 15px;
+}
+
+.pagination-item--active .pagination-item__link {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.pagination-item--active .pagination-item__link:hover {
+    background-color: #f8642e;
+}
+
+.pagination-item__link {
+    --height: 30px;
+    display: block;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #939393;
+    min-width: 40px;
+    height: var(--height);
+    line-height: var(--height);
+    text-align: center;
+    border-radius: 2px;
 }
