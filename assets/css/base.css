@@ -201,9 +201,6 @@ html {
 
 .select-input__item {
     padding: 8px 0;
-}
-
-.select-input__link {
     font-size: 1.4rem;
     color: var(--text-color);
     text-decoration: none;
@@ -211,8 +208,9 @@ html {
     display: block;
 }
 
-.select-input__link:hover {
+.select-input__item:hover {
     color: var(--primary-color);
+    cursor: pointer;
 }
 
 

@@ -1088,6 +1088,7 @@ input[type="password"] {
 .home-product-item:hover {
     transform: translateY(-1px);
     box-shadow: 0 1.5px 20px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
 }
 
 .home-product-item__img {
