@@ -229,3 +229,60 @@ function sortPrice() {
 
 sortPrice();
 
+// Sort product 
+
+function sortProduct() {
+    // Get btn class list
+    let btnFilters = document.getElementsByClassName('home-filter__btn');
+    // get elm of sale product btn 
+    let saleBtn = btnFilters[0];
+    // get elm of new product btn 
+    let newBtn = btnFilters[1];
+    // get elm of best selling btn 
+    let bestSellBtn = btnFilters[2];
+
+    function removePrimaryClass() {
+        for (let btnFilter of btnFilters) {
+            btnFilter.classList.remove('btn--primary');
+        }
+    }
+
+    if (saleBtn) {
+        saleBtn.onclick = () => {
+            // console.log('success');
+            removePrimaryClass();
+            saleBtn.classList.add('btn--primary');
+            pageProducts.sort((a, b) => {
+                return a.per - b.per;
+            })
+            renderPageProducts();
+        }
+    }
+
+    if (newBtn) {
+        newBtn.onclick = () => {
+            // console.log('success');
+            removePrimaryClass();
+            newBtn.classList.add('btn--primary');
+            pageProducts.sort((a, b) => {
+                return b.sold - a.sold;
+            })
+            renderPageProducts();
+        }
+    }
+
+    if (bestSellBtn) {
+        bestSellBtn.onclick = () => {
+            // console.log('success');
+            removePrimaryClass();
+            bestSellBtn.classList.add('btn--primary');
+            pageProducts.sort((a, b) => {
+                return b.sold - a.sold;
+            })
+            renderPageProducts();
+        }
+    }
+}
+
+sortProduct();
+
