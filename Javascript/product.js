@@ -3,7 +3,7 @@
 const pageProducts = [
     {
         id: 0,
-        img: './assets/img/xe_tai.PNG',
+        img: './assets/img/xe_tai.png',
         name: 'Mô Hình LEGO Technic 42078 - Xe Tải Cẩu Container Mack Anthem (LEGO Technic 42078 Mack Anthem)',
         oldPrice: '8.449.000',
         curPrice: '6.999.000',
@@ -17,7 +17,7 @@ const pageProducts = [
     },
     {
         id: 0,
-        img: './assets/img/xe_dia_hinh.PNG',
+        img: './assets/img/xe_dia_hinh.png',
         name: 'Mô Hình LEGO Technic 42095 - Xe Địa Hình Biểu Diễn điều khiển từ xa',
         oldPrice: '5.4999.000',
         curPrice: '3.999.000',
@@ -31,7 +31,7 @@ const pageProducts = [
     },
     {
         id: 0,
-        img: './assets/img/khung_long.PNG',
+        img: './assets/img/khung_long.png',
         name: 'Đồ Chơi LEGO Khủng Long Jurassic World 41614 - Owen & Blue',
         oldPrice: '1.299.000',
         curPrice: '899.000',
@@ -45,7 +45,7 @@ const pageProducts = [
     },
     {
         id: 0,
-        img: './assets/img/tau_luon.PNG',
+        img: './assets/img/tau_luon.png',
         name: 'Mô Hình LEGO Creator Expert 10261 - Tàu Lượn Siêu Tốc gắn Động Cơ (LEGO 10261 Roller Coaster)',
         oldPrice: '6.999.000',
         curPrice: '2.999.000',
@@ -59,7 +59,7 @@ const pageProducts = [
     },
     {
         id: 0,
-        img: './assets/img/angry_bird.PNG',
+        img: './assets/img/angry_bird.png',
         name: 'Đồ Chơi LEGO Angry Birds 75826 - Tấn Công Lâu Đài của Vua Lợn (LEGO Angry Birds King Pigs Castle 75826)',
         oldPrice: '4.690.000',
         curPrice: '3.250.000',
@@ -72,7 +72,7 @@ const pageProducts = [
         link: 'product-info.html'
     }, {
         id: 0,
-        img: './assets/img/tram_xe.PNG',
+        img: './assets/img/tram_xe.png',
         name: 'Mô Hình LEGO Creator Expert 10264 - Trạm Xe Cổ Điển (LEGO 10264 Corner Garage)',
         oldPrice: '8.570.000',
         curPrice: '6.350.000',
@@ -86,7 +86,7 @@ const pageProducts = [
     },
     {
         id: 0,
-        img: './assets/img/xe_buyt.PNG',
+        img: './assets/img/xe_buyt.png',
         name: 'Mô Hình LEGO Creator Expert 10258 - Xe Buýt London (LEGO Creator Expert London Bus)',
         oldPrice: '7.930.000',
         curPrice: '4.912.000',
@@ -100,7 +100,7 @@ const pageProducts = [
     },
     {
         id: 0,
-        img: './assets/img/svd.PNG',
+        img: './assets/img/svd.png',
         name: 'Đồ Chơi LEGO Creator Expert 10272 - Sân Vận Động Manchester United Old Trafford (LEGO 10272 Old Trafford - Manchester United)',
         oldPrice: '14.950.000',
         curPrice: '10.720.000',
@@ -114,7 +114,7 @@ const pageProducts = [
     },
     {
         id: 0,
-        img: './assets/img/xe_hoi.PNG',
+        img: './assets/img/xe_hoi.png',
         name: 'Đồ Chơi LEGO Creator Expert 10271 - Xe Fiat 500 cổ điển (LEGO 10271 Fiat 500)',
         oldPrice: '4.350.000',
         curPrice: '3.129.000',
@@ -128,7 +128,7 @@ const pageProducts = [
     },
     {
         id: 0,
-        img: './assets/img/hai_dang.PNG',
+        img: './assets/img/hai_dang.png',
         name: 'Mô Hình LEGO Creator 31051 - Xếp hình Ngọn Hải Đăng và Bến Tàu 3-trong-1 (LEGO Creator Lighthouse Point 31051)',
         oldPrice: '2.430.000',
         curPrice: '1.999.000',
