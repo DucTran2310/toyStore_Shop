@@ -100,7 +100,7 @@ const pageProducts = [
     },
     {
         id: 0,
-        img: '../assets/img/svd.jpg',
+        img: 'https://i.imgur.com/LlMlsPE.jpg',
         name: 'Đồ Chơi LEGO Creator Expert 10272 - Sân Vận Động Manchester United Old Trafford (LEGO 10272 Old Trafford - Manchester United)',
         oldPrice: '14.950.000',
         curPrice: '10.720.000',
