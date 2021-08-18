@@ -9,6 +9,7 @@
     --header-height: 135px;
     --navbar-height: 33px;
     --header-with-search-height: calc( var(--header-height) - var(--navbar-height));
+    --header-sort-bar-height: 46px;
 }
 
 * {
@@ -29,23 +30,13 @@ html {
 
 /* Responsive */
 
-.grid {
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.grid_full-width {
-    width: 100%;
-}
-
 .grid__row {
     display: flex;
     /* nam ngang */
     flex-wrap: wrap;
     /* chieu ngang lon hon grid_row thi se nhay xuong hang */
-    margin-left: -5px;
-    margin-right: -5px;
+    margin-left: -4px;
+    margin-right: -4px;
 }
 
 
