@@ -143,13 +143,13 @@ const pageProducts = [
 ]
 
 function renderPageProducts() {
-    let productElsCtn = document.querySelector('.home-product .grid__row'); // get element of product container
+    let productElsCtn = document.querySelector('.home-product .row'); // get element of product container
     let productEls = ''; // save page product elements
 
     for (let pageProduct of pageProducts) {
         productEls +=
-            `<div class="grid__column-2-4">
-                <a href="product-Info.html" id="${pageProduct.id}" class="home-product-item">
+            `<div class="col l-2-4 m-4 c-6">
+                <a href="../product-Infor.html" id="${pageProduct.id}" class="home-product-item">
                     <div class="home-product-item__img" style="background-image: url(${pageProduct.img});"></div>
                     <div class="home-product-item__name">${pageProduct.name}</div>
                     <div class="home-product-item__price">
