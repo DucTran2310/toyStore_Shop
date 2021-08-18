@@ -1,0 +1,117 @@
+/* Mobile & tablet */
+
+@media (max-width: 1023px) {
+     :root {
+        --header-height: 75px;
+        --navbar-height: 0px;
+    }
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+    .header {
+        position: fixed;
+        /* background: white; */
+        z-index: 10;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    .header__cart-list {
+        position: fixed;
+        top: var(--header-height);
+        right: 0;
+        width: 100%;
+        padding: 0 calc((100% - 644px) / 2);
+    }
+    .header__cart-list::after {
+        display: none;
+    }
+    .app__container {
+        margin-top: calc(var(--header-height) + var(--header-sort-bar-height));
+    }
+    .header__sort-bar {
+        display: flex;
+        border: 0;
+        height: 40px;
+        position: unset;
+    }
+    .app__content {
+        padding: 8px;
+    }
+}
+
+
+/* tablet */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+    .header__cart {
+        width: 80px;
+        text-align: right;
+    }
+}
+
+
+/* mobile */
+
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+    .header-with-search {
+        justify-content: space-between;
+    }
+    .header__cart {
+        width: unset;
+        margin-right: 12px;
+    }
+    .header__logo {
+        width: unset;
+    }
+    .header__logo-img {
+        height: 85px;
+    }
+    .header__cart-wrap {
+        margin: 12px;
+    }
+    .header__search {
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        right: 0;
+        height: 46px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+        z-index: 1;
+        border: 1px solid #ccc;
+        padding: 0 16px;
+        animation: mobileSearchSideIn linear 0.4s;
+        display: none;
+    }
+    .header__search-history {
+        position: fixed;
+        width: 100%;
+        top: calc(var(--header-height) + var(--header-sort-bar-height));
+        left: 0;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    }
+    .pagination-item__link {
+        --height: 28px;
+        font-size: 1.6rem;
+        min-width: 20px;
+    }
+    .app__content {
+        margin: 0 4px;
+    }
+    @keyframes mobileSearchSideIn {
+        from {
+            opacity: 0;
+            top: calc(var(--header-height) / 2);
+        }
+        to {
+            opacity: 1;
+            top: var(--header-height);
+        }
+    }
+}
