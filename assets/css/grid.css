@@ -36,6 +36,8 @@
 }
 
 .c-1 {
+    /* flex property is a shorthand property for flex-grow, flex-shrink and flex-basis*/
+    /* flex basis set horizontal  */
     flex: 0 0 8.33333%;
     max-width: 8.33333%;
 }
