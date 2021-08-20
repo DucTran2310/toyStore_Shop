@@ -1117,7 +1117,7 @@
     font-size: 1.4rem;
     overflow: hidden;
     text-overflow: ellipsis;
-    line-height: 1.875rem;
+    line-height: 30px;
     margin-bottom: 10px;
     padding-bottom: 15px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
