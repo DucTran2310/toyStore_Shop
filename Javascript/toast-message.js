@@ -1,3 +1,4 @@
+// Formatting numbers in JavaScript  
 function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 }
@@ -11,7 +12,7 @@ function addProductQnt(inpCtn) {
     let incBtn = inpCtn.querySelector('.shop__qnt-btn--inc'); // get element of increase button
 
     // let maxQnt = Number(document.querySelector('.product__qnt-note-num').innerHTML); // get element of max quantity then convert to number
-    let maxQnt = 1100;
+    let maxQnt = 10;
 
     inpEl.setAttribute('maxlength', (maxQnt.toString()).length);
 
