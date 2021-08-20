@@ -1,3 +1,49 @@
+// Add image slider product
+const slideProducts = [
+    {
+        img: './assets/img/svd.png',
+    },
+    {
+        img: './assets/img/slide1.jpg',
+    },
+    {
+        img: './assets/img/slide2.jpg',
+    },
+    {
+        img: './assets/img/slide3.jpg',
+    },
+    {
+        img: './assets/img/slide4.jpg',
+    },
+    {
+        img: './assets/img/slide5.jpg',
+    },
+    {
+        img: './assets/img/slide6.jpg',
+    },
+];
+
+function renderSlideProduct() {
+    let productElsCtn = document.querySelector('.product__cards-container'); // get element of cards container
+    let productEls = ''; // save page product elements
+
+    for (let slideProduct of slideProducts) {
+        productEls +=
+            `<div class="product__cards-container">
+            <div class="product__card-wrapper">
+                <div class="product__card">
+                    <img src="${slideProduct.img}" class="product__card-img">
+                </div>
+            </div>
+        </div>`
+    }
+
+    if (productElsCtn) {
+        productElsCtn.innerHTML = productEls;
+    }
+}
+
+renderSlideProduct();
 
 // show products through slide card
 function slideInfoCard() {
@@ -57,7 +103,7 @@ function changeSlideThumb() {
     for (let thumb of thumbs) {
         thumb.onmouseover = () => {
             for (let thumb of thumbs) {
-                (thumb.parentElement).style.border = '2px solid transparent';
+                (thumb.parentElement).style.border = '2px solid transparent'; //set style for element parent
             }
 
             (thumb.parentElement).style.border = '2px solid var(--var-color)';
@@ -75,21 +121,21 @@ addProductQnt(inpCtn);
 
 // render options items info and handle event when add to cart button is clicked
 function renderOptionsInfo() {
-    const optsInfo = [
+    const optsInfos = [
         {
             id: 'p-o-1',
-            name: 'Creeper',
-            img: 'https://cdn.shopify.com/s/files/1/0251/2155/4510/products/7652p_262c_1x_e931ecde-ec21-47ef-96eb-8424c3913890_800x.jpg?v=1608318433',
+            name: 'size S',
+            img: './assets/img/svd.png',
         },
         {
             id: 'p-o-2',
-            name: 'Trong suốt',
-            img: 'https://cdn.shopify.com/s/files/1/0266/4841/2351/products/013244285218-1_1800x1800.jpg?v=1611083347',
+            name: 'size M',
+            img: './assets/img/slide1.jpg',
         },
         {
             id: 'p-o-3',
-            name: 'TNT',
-            img: 'https://cdn.shopify.com/s/files/1/0266/4841/2351/products/013244356772-2_1800x1800.jpg?v=1611078189'
+            name: 'size L',
+            img: './assets/img/slide2.jpg'
         },
     ] // save options info
 
@@ -99,7 +145,8 @@ function renderOptionsInfo() {
     let errorMsg = optsCtn.querySelector('.product__options-items-error-message'); // get element of options error message
     let optInfoItems = ''; // save option items 
 
-    for (let optInfo of optsInfo) {
+    // add option items
+    for (let optInfo of optsInfos) {
         optInfoItems += `<button class="product__options-item">${optInfo.name}</button>`
     }
 
@@ -110,7 +157,8 @@ function renderOptionsInfo() {
 
     for (let optEl of optEls) {
         optEl.onmouseover = () => {
-            for (let optInfo of optsInfo) {
+            for (let optInfo of optsInfos) {
+                // content of optInfo is coincide name of optInfo
                 if (optEl.textContent === optInfo.name) {
                     bgrThumb.setAttribute('src', optInfo.img);
                 }
@@ -169,36 +217,37 @@ function renderComboCards() {
     const comboCardsInfo = [
         {
             id: 'c-c-i-1',
-            name: 'Áo thun tay ngắn cho người lớn gà Jolly Minecraft',
-            img: 'https://cdn.shopify.com/s/files/1/0266/4841/2351/products/MCJM-CHCKN-100011-MF_1800x1800.png?v=1614028694',
-            oldPrice: 250000,
-            curPrice: 150000
+            name: 'Khối rubik bấm nút đồ chơi HDY',
+            img: './assets/img/anh_combo.png',
+            oldPrice: 450000,
+            curPrice: 240000
         },
         {
             id: 'c-c-i-2',
-            name: 'Chăn đắp và lót giường Minecraft Dungeon',
-            img: 'https://cdn.shopify.com/s/files/1/0266/4841/2351/products/32281406691-1b_1800x1800.jpg?v=1611683885',
-            oldPrice: 140000,
-            curPrice: 50000
+            name: 'Sách vải HDY hình động vật 3D có âm thanh ',
+            img: './assets/img/anh_combo2.png',
+            oldPrice: 200000,
+            curPrice: 109000
         },
         {
             id: 'c-c-i-3',
-            name: 'Ly gốm sứ bom TNT Minecraft',
-            img: 'https://cdn.shopify.com/s/files/1/0266/4841/2351/products/MCIC-TNT-100040-11oz-mug-Left-MF_1800x1800.png?v=1612793288',
-            oldPrice: 329000,
-            curPrice: 210000
+            name: 'Đồ Chơi Con Quay HDY Có Cốc Hút Gắn Tường',
+            img: './assets/img/anh_combo3.png',
+            oldPrice: 139000,
+            curPrice: 89000
         },
         {
             id: 'c-c-i-4',
-            name: 'Mũ in hình logo Minecraft được thêu bằng vải',
-            img: 'https://cdn.shopify.com/s/files/1/0266/4841/2351/products/MCIC-LOGO-100172-Black-MF_1800x1800.png?v=1612462143',
-            oldPrice: 50000,
-            curPrice: 19000
+            name: 'Tranh xếp hình 3D HDY chất liệu gỗ cho bé',
+            img: './assets/img/anh_combo4.png',
+            oldPrice: 209999,
+            curPrice: 12900
         },
     ]; // save combo cards elements info
     let comboCardsCtn = document.querySelector('.products-combo__cards'); // get element of combo cards container
     let comboCardsEl = '';  // save combo card elements
 
+    // Add product combo sale
     for (let comboCardInfo of comboCardsInfo) {
         comboCardsEl +=
             `<div id="${comboCardInfo.id}" class="products-combo__card">
@@ -223,10 +272,10 @@ function renderComboCards() {
 
     comboCardsCtn.innerHTML = comboCardsEl;
 
-    let comboCardEls = document.querySelectorAll('.products-combo__card'); // get element of combo cards
-    let oldTotal = document.querySelector('.products-combo__checkout-total-old'); // get element of old total
-    let currentTotal = document.querySelector('.products-combo__checkout-total-current'); // get element of current total
-    let saveTotal = document.querySelector('.products-combo__checkout-save-price'); // get element of save total
+    let comboCardEls = document.querySelectorAll('.products-combo__card'); // get element of combo cards (thẻ chứa các product sale)
+    let oldTotal = document.querySelector('.products-combo__checkout-total-old'); // get element of old total (giá tiền cũ)
+    let currentTotal = document.querySelector('.products-combo__checkout-total-current'); // get element of current total (giá tiền hiện tại)
+    let saveTotal = document.querySelector('.products-combo__checkout-save-price'); // get element of save total (giá tiền đã tiết kiệm được)
 
     let oldTotalNew = 0;
     let currentTotalNew = 0;
@@ -236,13 +285,14 @@ function renderComboCards() {
 
         comboCardInp.onclick = () => {
             let comboCardElID = comboCardEl.id; // get id of combo card when clicked
-
+            // Sản phẩm nào được chọn thì remove, ko thì tích vào 
             if (comboCardEl.classList.contains('shop-checkbox--checked')) {
                 comboCardEl.classList.remove('shop-checkbox--checked');
             } else {
                 comboCardEl.classList.add('shop-checkbox--checked');
             }
 
+            // function tính toán giá tiền cũ và hiện tại 
             let plusOrMinus = (letter) => {
                 for (let comboCardInfo of comboCardsInfo) {
                     if (comboCardElID === comboCardInfo.id) {
@@ -251,16 +301,19 @@ function renderComboCards() {
                     }
                 }
 
+                // in số bằng dấu . phân cách
                 oldTotal.innerHTML = `₫${numberWithCommas(oldTotalNew)}`;
                 currentTotal.innerHTML = `₫${numberWithCommas(currentTotalNew)}`;
             }
 
+            // khi tích vào có tích rồi thì bỏ tích
             if (comboCardEl.classList.contains('selected')) {
                 comboCardEl.classList.remove('selected');
             } else {
                 comboCardEl.classList.add('selected');
             }
 
+            // kiểm tra ==> đã tích thì tính tổng ngược lại thì trừ đi
             if (comboCardEl.classList.contains('selected')) {
                 plusOrMinus('+');
             } else {
@@ -287,6 +340,7 @@ function showMore() {
     let iconDown = readMoreBtn.querySelector('.read-more-btn__icon--down'); // get element of icon down
     let iconUp = readMoreBtn.querySelector('.read-more-btn__icon--up'); // get element of icon up
 
+    // classList.toggle("hidden", true)
     readMoreBtn.onclick = () => {
         dots.classList.toggle('hidden');
         textMore.classList.toggle('hidden');
